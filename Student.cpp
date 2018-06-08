@@ -54,7 +54,7 @@ UGStudent::~UGStudent()
     
 }
 
-UGStudent::UGStudent(string name, string no, string type, string ins): Student(name, no, type)
+UGStudent::UGStudent(string name, string no, string type, string ins): Student(name, no, type) //成员初始化表中指出基类的初始化方式
 {
     Instructor = ins;
 }

@@ -1,6 +1,5 @@
 //
 //  System.hpp
-//  StudentsSystem
 //
 //  Created by 张昊 on 16/11/9.
 //  Copyright © 2016年 张昊. All rights reserved.
