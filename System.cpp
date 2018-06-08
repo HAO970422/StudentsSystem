@@ -31,8 +31,9 @@ void System::ReadFromStuFile(string filename)
     string line;
     while(!StuFile.eof())
     {
-        getline(StuFile, line);
+        getline(StuFile, line); //得到文本的一行
         vector<string> token;
+        //以空格分割
         auto split_pos = line.find(" ");
         while(split_pos <= line.length())
         {
@@ -71,6 +72,7 @@ void System::ReadFromCourFile(string filename)
     {
         getline(CourFile, line);
         vector<string> token;
+        
         auto split_pos = line.find(" ");
         while(split_pos <= line.length())
         {
@@ -101,12 +103,13 @@ void System::SaveStudents(string filename)
 
     for(auto i = S.begin(); i != S.end(); i++)
     {
-        outfile<<(*i)->SaveFile();
+        outfile<<(*i)->SaveFile(); // save学生信息
+        // save学生的选课信息
         for(auto j = (*i)->sChoice.begin(); j != (*i)->sChoice.end(); j++)
         {
             outfile<<(*j).getcName()<<" ";
         }
-        outfile<<endl;
+        outfile<<endl; //换行
         //if((*i)->getsType() == "UG")
         //    outfile<<(*i)->SaveFile();
         //else if((*i)->getsType() == "G")

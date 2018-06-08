@@ -16,9 +16,9 @@ using namespace std;
 class Course
 {
 private:
-    string cName;
-    int cScore;
-    int Grade;
+    string cName; //课程名称
+    int cScore; //课程学分
+    int Grade; //课程成绩
 public:
     Course();
     Course(string name, int score);
