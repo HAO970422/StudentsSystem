@@ -13,7 +13,7 @@ using namespace std;
 
 int main()
 {
-    System sys("/Users/zhanghao/Desktop/StudentsSystem/ReadStu.txt", "/Users/zhanghao/Desktop/StudentsSystem/ReadCour.txt");
+    System sys("/Users/zhao/Vscode/C++/StudentsSystem/ReadStu.txt", "/Users/zhao/Vscode/C++/StudentsSystem/ReadCour.txt");
     
     while(1)
     {
